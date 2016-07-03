@@ -14,6 +14,11 @@
 		70404E261D2861AA00CB713E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70404E241D2861AA00CB713E /* Main.storyboard */; };
 		70404E281D2861AA00CB713E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70404E271D2861AA00CB713E /* Assets.xcassets */; };
 		70404E2B1D2861AA00CB713E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70404E291D2861AA00CB713E /* LaunchScreen.storyboard */; };
+		70404E381D2862D500CB713E /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70404E331D2862D500CB713E /* coin.wav */; };
+		70404E391D2862D500CB713E /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70404E341D2862D500CB713E /* explosion.wav */; };
+		70404E3A1D2862D500CB713E /* music.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 70404E351D2862D500CB713E /* music.m4a */; };
+		70404E3B1D2862D500CB713E /* PlayerExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 70404E361D2862D500CB713E /* PlayerExplosion.sks */; };
+		70404E3C1D2862D500CB713E /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 70404E371D2862D500CB713E /* spark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		70404E271D2861AA00CB713E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70404E2A1D2861AA00CB713E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70404E2C1D2861AA00CB713E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70404E331D2862D500CB713E /* coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coin.wav; sourceTree = "<group>"; };
+		70404E341D2862D500CB713E /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion.wav; sourceTree = "<group>"; };
+		70404E351D2862D500CB713E /* music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = music.m4a; sourceTree = "<group>"; };
+		70404E361D2862D500CB713E /* PlayerExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlayerExplosion.sks; sourceTree = "<group>"; };
+		70404E371D2862D500CB713E /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 		70404E1B1D2861AA00CB713E /* Project36 */ = {
 			isa = PBXGroup;
 			children = (
+				70404E321D28629200CB713E /* Content */,
 				70404E1C1D2861AA00CB713E /* AppDelegate.swift */,
 				70404E1E1D2861AA00CB713E /* GameScene.sks */,
 				70404E201D2861AA00CB713E /* GameScene.swift */,
@@ -68,6 +79,18 @@
 				70404E2C1D2861AA00CB713E /* Info.plist */,
 			);
 			path = Project36;
+			sourceTree = "<group>";
+		};
+		70404E321D28629200CB713E /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				70404E331D2862D500CB713E /* coin.wav */,
+				70404E341D2862D500CB713E /* explosion.wav */,
+				70404E351D2862D500CB713E /* music.m4a */,
+				70404E361D2862D500CB713E /* PlayerExplosion.sks */,
+				70404E371D2862D500CB713E /* spark.png */,
+			);
+			name = Content;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +125,7 @@
 				TargetAttributes = {
 					70404E181D2861AA00CB713E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WRD8ABT3AF;
 					};
 				};
 			};
@@ -128,6 +152,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70404E3B1D2862D500CB713E /* PlayerExplosion.sks in Resources */,
+				70404E3C1D2862D500CB713E /* spark.png in Resources */,
+				70404E391D2862D500CB713E /* explosion.wav in Resources */,
+				70404E3A1D2862D500CB713E /* music.m4a in Resources */,
+				70404E381D2862D500CB713E /* coin.wav in Resources */,
 				70404E1F1D2861AA00CB713E /* GameScene.sks in Resources */,
 				70404E2B1D2861AA00CB713E /* LaunchScreen.storyboard in Resources */,
 				70404E281D2861AA00CB713E /* Assets.xcassets in Resources */,
@@ -257,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Project36/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxpeiros.Project36;
@@ -268,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Project36/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxpeiros.Project36;
@@ -294,6 +325,7 @@
 				70404E311D2861AA00CB713E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
